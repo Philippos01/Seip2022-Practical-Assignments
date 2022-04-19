@@ -1,5 +1,6 @@
 package gradeshistogram;
 import java.io.File;
+import java.util.Arrays;
 import java.util.Scanner;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
@@ -19,7 +20,7 @@ public class HistogramGenerator {
 		 * The XYSeries that are loaded in the dataset. There might be many
 		 * series in one dataset.
 		 */
-		XYSeries data = new XYSeries("random values");
+		XYSeries data = new XYSeries("Grades");
 
 		/*
 		 * Populating the XYSeries data object from the input Integer array
@@ -37,7 +38,7 @@ public class HistogramGenerator {
 		boolean urls = false; // do not visualize urls
 
 		// Declare and initialize a createXYLineChart JFreeChart
-		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Grades Frequency Histogram", "Grades", "Frequency", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 
 		/*
@@ -50,19 +51,28 @@ public class HistogramGenerator {
 		frame.setVisible(true);
 	}
 
+public void Create_Dataset(int[] numbers) {
+	HistogramGenerator gen1 = new HistogramGenerator();
+	int[] data = {0,0,0,0,0,0,0,0,0,0,0};
+	for(int i=0; i<=numbers.length-1; i++) {
+		data[numbers[i]]+=1;
+	}
+	gen1.generateChart(data);
+}
 
 public static void main(String[]args) {
 	try {
-	File f = new File("C:\\Users\\Philippos\\eclipse-workspace\\seip2022_practical_assignments\\gradeshistogram\\target\\classes\\grades.txt");
+	File f = new File("C:\\Users\\Philippos\\Downloads\\grades.txt");
 	Scanner scanner = new Scanner(f);
 	HistogramGenerator gen = new HistogramGenerator();
-	int [] numbers = new int [(int) f.length()];
+	int [] numbers = new int [149];
 	int i = 0;
 	while(scanner.hasNextInt())
 	{
 	     numbers[i++] = scanner.nextInt();
 	}
-	gen.generateChart(numbers);
+	System.out.println(Arrays.toString(numbers));
+	gen.Create_Dataset(numbers);
 	}catch(Exception e) {
 		e.printStackTrace();
 	}
