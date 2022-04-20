@@ -1,6 +1,5 @@
 package gradeshistogram;
 import java.io.File;
-import java.util.Arrays;
 import java.util.Scanner;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
@@ -60,10 +59,10 @@ public void Create_Dataset(int[] numbers) {
 	gen1.generateChart(data);
 }
 
-public static void main(String[]args) {
+public static void main(String[] args) {
 	try {
-	File f = new File("C:\\Users\\Philippos\\Downloads\\grades.txt");
-	Scanner scanner = new Scanner(f);
+	File f = new File(args[0]);
+	Scanner scanner = new Scanner(f);//C:\\Users\\Philippos\\Downloads\\grades.txt    
 	HistogramGenerator gen = new HistogramGenerator();
 	int [] numbers = new int [149];
 	int i = 0;
@@ -71,7 +70,6 @@ public static void main(String[]args) {
 	{
 	     numbers[i++] = scanner.nextInt();
 	}
-	System.out.println(Arrays.toString(numbers));
 	gen.Create_Dataset(numbers);
 	}catch(Exception e) {
 		e.printStackTrace();
