@@ -8,9 +8,9 @@ An assignment for the [**Software Engineering in Practice**](https://edu.dmst.au
 
 ## *Running the Program*
 
-So, in order to run the program you simply go to the [pom.xml](gradeshistogram/pom.xml) file and run the command: ```mvn package``` and then it wil compile the source code and also package it as a jar file and put it into the target folder.
+So, in order to run the program you simply go to the [pom.xml](gradeshistogram/pom.xml) file and run the command: ```mvn package``` and then it will compile the source code and also package it as a jar file and put it into the target folder.
 Then you can simply use the following command:<br>
-```java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt```
+```java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar <Give the path of grades.txt file in your computer>```
 <br>
 and the output should be the following image:
 <br>
