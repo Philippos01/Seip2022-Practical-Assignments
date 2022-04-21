@@ -61,7 +61,6 @@ public void Create_Dataset(int[] numbers) {
 
 public static void main(String[] args) {
 	try {
-	args[0]=new File("C:\\Users\\Philippos\\Downloads\\grades.txt").getAbsolutePath();
 	File f = new File(args[0]);
 	Scanner scanner = new Scanner(f);//C:\\Users\\Philippos\\Downloads\\grades.txt    
 	HistogramGenerator gen = new HistogramGenerator();
