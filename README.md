@@ -8,7 +8,7 @@ An assignment for the [**Software Engineering in Practice**](https://edu.dmst.au
 
 ## *Running the Program*
 
-So, in order to run the program you simply go to the target file(**Path:gradeshistogram\target**) use the following command: `gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt` and the output should be the following image:
+So, in order to run the program you simply go to the target file(**Path:gradeshistogram\target**) use the following command: ```java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt``` and the output should be the following image:
 <br>
 <br>
 <img src="images/Grade_Plot.png" width=75% height=75% />

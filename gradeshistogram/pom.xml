@@ -25,7 +25,7 @@
 	<configuration>
 		<archive>
 			<manifest>
-			  <mainClass>gradeshistogram.HistogramGenerator</mainClass> 
+			  <mainClass>seip2022_practical_assignments.HistogramGenerator</mainClass> 
 			</manifest>
 		</archive>
 		<descriptorRefs>
