@@ -8,7 +8,12 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 public class HistogramGenerator {
-
+	/***
+	 * 
+	 * @author Filippos Priovolos. The purpose of this class is to demonstrate a simple
+	 *         scenario of a JFreeChart XYLine chart.
+	 * @since April 2022
+	 */
 	public void generateChart(int[] dataValues) {
 		/*
 		 * The XYSeriesCollection object is a set XYSeries series (dataset) that
@@ -49,16 +54,25 @@ public class HistogramGenerator {
 		// makes the previously created frame visible
 		frame.setVisible(true);
 	}
-
+	/*
+	 * Create_Dataset() method takes as a parameter the grades array and
+	 *  creates a new one that contains the frequency of its grade.
+	 *  Then it calls the generateChart() method with the new array as a parameter
+	 *  and our frequency grade chart is generated.
+	 * 
+	 */
 public void Create_Dataset(int[] numbers) {
 	HistogramGenerator gen1 = new HistogramGenerator();
 	int[] data = {0,0,0,0,0,0,0,0,0,0,0};
-	for(int i=0; i<=numbers.length-1; i++) {
+	for(int i=0; i<numbers.length; i++) {
 		data[numbers[i]]+=1;
 	}
 	gen1.generateChart(data);
 }
-
+/*
+ * Here we have the main method who reads the file and
+ *  call the method in order to generate our chart. 
+ */
 public static void main(String[] args) {
 	try {
 	File f = new File(args[0]);
