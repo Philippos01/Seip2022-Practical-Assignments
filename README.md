@@ -1,10 +1,11 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <img src="images/Apache-maven.jpg" align="right" width=20% height=20% />
 
 # ***Maven Assignment***
 
 ## *About the project*
 
-An assignment for the [**Software Engineering in Practice**](https://edu.dmst.aueb.gr/course/view.php?id=77) course about the maven project management and comprehension tool. More specifically in this assignment we will create a Histogram with some grades(0-10) using java for coding and maven for packaging and deploying the programm.
+An assignment for the [**Software Engineering in Practice**](https://edu.dmst.aueb.gr/course/view.php?id=77) course about the maven project management and comprehension tool. More specifically in this assignment we will create a Histogram with some grades(0-10) using java for coding and maven for packaging and deploying the program.
 
 ## *Running the Program*
 
