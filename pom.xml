@@ -5,12 +5,16 @@
 	<groupId>gr.aueb.dmst.filippos</groupId>
 	<artifactId>seip2022_practical_assignments</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+    <packaging>pom</packaging>
 	<name>Grades Assignment</name>
 	<description>This is a maven assignment for representing grades in a histogram</description>
 	<modules>
 		<module>gradeshistogram</module>
-		<module>Unittesting</module>
+		<module>Unittesing</module>
 	</modules>
 	<dependencies>
 		<dependency>
