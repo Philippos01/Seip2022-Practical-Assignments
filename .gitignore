@@ -35,5 +35,5 @@ apache-maven-3.8.5-bin
 /gradeshistogram/bin
 
 #Unittesting folders
-Unittesing/target
-Unittesing/Unittesting.iml
+/Unittesing/Unittesting.iml/
+/Unittesting/target/
