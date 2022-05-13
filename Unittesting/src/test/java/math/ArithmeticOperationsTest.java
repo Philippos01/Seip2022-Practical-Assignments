@@ -7,21 +7,21 @@ import org.junit.rules.ExpectedException;
 public class ArithmeticOperationsTest {
     ArithmeticOperations ar = new ArithmeticOperations();
 
-@Test (expected = ArithmeticException.class)
+    @Test (expected = ArithmeticException.class)
     public void test_divide(){
-    ar.divide(0,0);
-}
-@Rule
-public ExpectedException thrown = ExpectedException.none();
+        ar.divide(0,0);
+    }
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
 
-@Test
+    @Test
     public void test_multiply_x_or_y_negative(){
-    thrown.expect(IllegalArgumentException.class);
-    ar.multiply(-1,1);
-}
-@Test
+        thrown.expect(IllegalArgumentException.class);
+        ar.multiply(-1,1);
+    }
+    @Test
     public void test_multiply_product_of_multiplication(){
-    Assert.assertEquals(6,ar.multiply(2,3));
+        Assert.assertEquals(6,ar.multiply(2,3));
     }
 
     @Test

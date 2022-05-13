@@ -10,5 +10,5 @@ public class MyMath {
         }
         else return n * factorial(n - 1);
 
-        }
     }
+}
