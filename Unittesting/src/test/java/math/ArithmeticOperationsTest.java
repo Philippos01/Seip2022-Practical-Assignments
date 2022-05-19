@@ -17,6 +17,7 @@ public class ArithmeticOperationsTest {
     @Test
     public void test_multiply_x_or_y_negative(){
         thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("x & y should be >= 0");
         ar.multiply(-1,1);
     }
     @Test
