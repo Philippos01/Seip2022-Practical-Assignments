@@ -8,7 +8,6 @@ branches:
     - development
 
 before_script:
-  - cd Lab_Assignments  # enter Maven root directory
   - ls -la # this command just prints the contents of the current working directory.
 
 script:
