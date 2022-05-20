@@ -11,4 +11,19 @@ public class MyMath {
         else return n * factorial(n - 1);
 
     }
+    public boolean isPrime(int n){
+        boolean flag = true;
+        if (n<2){
+            throw new IllegalArgumentException("Prime numbers are greater than 1");
+        }
+        else {
+            for (int i=2; i<n; i++){
+                if(n%i==0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+    return flag;
+    }
 }
