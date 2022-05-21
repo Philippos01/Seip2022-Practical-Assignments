@@ -20,7 +20,7 @@ public class MyMathTest {
 
     @Test
     public void test_is_prime(){
-        Assert.assertEquals(true, math.isPrime(7));
+        Assert.assertEquals(true, math.isPrime(3));
     }
     @Test
     public void test_is_not_prime(){
