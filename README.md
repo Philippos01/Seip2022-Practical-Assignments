@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://codecov.io/gh/Philippos01/Lab_Assignments/branch/development/graph/badge.svg?token=R5DGGPMKUA)](https://codecov.io/gh/Philippos01/Lab_Assignments)
 <img src="images/Apache-maven.jpg" align="right" width=20% height=20% />
 
 # ***Maven Assignment***
