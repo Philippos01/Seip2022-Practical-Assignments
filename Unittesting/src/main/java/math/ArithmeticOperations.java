@@ -3,7 +3,7 @@ package math;
 /**
  * @author  Fpriovolos
  * @version 1.0
- * @since   2022-0521
+ * @since   2022-05-21
  */
 public class ArithmeticOperations {
 
