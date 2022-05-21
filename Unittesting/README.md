@@ -28,6 +28,6 @@ Codecov calculates and generates the test coverage of this repository uploading 
 #### Chart
 The inner-most circle is the entire project, moving away from the center are folders then, finally, a single file. The size and color of each slice is representing the number of statements and the coverage, respectivel
 
-<img src="C:\Users\Philippos\Desktop\Lab_Assignments\images\graph.svg">
+<img src="images/graph.svg">
 
 
