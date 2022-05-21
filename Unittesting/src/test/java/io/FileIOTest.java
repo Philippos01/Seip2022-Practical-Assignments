@@ -1,5 +1,9 @@
 package io;
-
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-0521
+ */
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;

@@ -1,5 +1,12 @@
 package math;
-
+/**
+ * The MyMath provides simple arithmetic operations
+ * that serve as hands-on practice on Unit Testing.
+ *
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-0521
+ */
 public class MyMath {
     public int factorial(int n){
         if(n<0 || n>12){

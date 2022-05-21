@@ -1,12 +1,9 @@
 package math;
 
 /**
- * The MathOperations provides simple arithmetic operations
- * that serve as hands-on practice on Unit Testing.
- *
- * @author  agkortzis
+ * @author  Fpriovolos
  * @version 1.0
- * @since   2020-04-06
+ * @since   2022-0521
  */
 public class ArithmeticOperations {
 

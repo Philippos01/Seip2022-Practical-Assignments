@@ -1,5 +1,9 @@
 package math;
-
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-0521
+ */
 import io.FileIO;
 public class ArrayOperations {
     public int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
