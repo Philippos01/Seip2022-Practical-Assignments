@@ -28,6 +28,14 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>4.3.0</version>
+				<configuration>
+					<repoToken>lPDb1w760AldTaV9968OUElNmWwY9MLgR</repoToken>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.8</version>
@@ -40,14 +48,6 @@
 					</execution>
 				</executions>
 			</plugin>
-				<plugin>
-					<groupId>org.eluder.coveralls</groupId>
-					<artifactId>coveralls-maven-plugin</artifactId>
-					<version>4.3.0</version>
-					<configuration>
-						<repoToken>lPDb1w760AldTaV9968OUElNmWwY9MLgR</repoToken>
-					</configuration>
-				</plugin>
 		</plugins>
 	</build>
 </project>
