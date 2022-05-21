@@ -19,6 +19,10 @@ To generate the code coverage jacoco report, execute the following Maven command
 ```
 mvn test jacoco:report
 ```
+## Continuous Integration service
+This project uses TravisCI service in order to test and build the project upon each ````git-push```` command.
+After each push to the remote repository you can check next to your commit if the project is successfully deployed or if new problem occurred.
+
 ## Code Coverage Services
 ### Codecov
 This repository is linked to the [Codecov](https://codecov.io/) service.
