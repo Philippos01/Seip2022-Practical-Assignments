@@ -14,4 +14,4 @@ script:
   - mvn clean package jacoco:report cobertura:cobertura
 
 after_success:
-  - echo "Process terminated successfully"
+  - bash <(curl -s https://codecov.io/bash) -t 816cefd1-ec03-43b0-bc9b-e1374106ac7c
