@@ -11,7 +11,7 @@ before_script:
   - ls -la # this command just prints the contents of the current working directory.
 
 script:
-  - mvn clean package jacoco:report cobertura:cobertura
+  - mvn clean package -DTRAVIS_JOB_ID=$TRAVIS_JOB_ID jacoco:report coveralls:report cobertura:cobertura
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 816cefd1-ec03-43b0-bc9b-e1374106ac7c
