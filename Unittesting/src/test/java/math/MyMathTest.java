@@ -11,7 +11,10 @@ import org.junit.rules.ExpectedException;
 public class MyMathTest {
     MyMath math=new MyMath();
     @Test(expected = IllegalArgumentException.class)
-    public void test_factorial_out_of_range(){math.factorial(-1);}
+    public void test_factorial_under_0(){math.factorial(-1);}
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_factorial_over_12(){math.factorial(13);}
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();

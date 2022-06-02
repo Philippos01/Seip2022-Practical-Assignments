@@ -12,12 +12,19 @@ import org.junit.rules.ExpectedException;
 public class ArithmeticOperationsTest {
     ArithmeticOperations ar = new ArithmeticOperations();
 
-    @Test (expected = ArithmeticException.class)
-    public void test_divide(){
-        ar.divide(0,0);
-    }
+
     @Rule
     public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void test_divide_exception(){
+        thrown.expect(ArithmeticException.class);
+        thrown.expectMessage("Cannot divide with zero");
+        ar.divide(0.0,0.0);
+    }
+
+    @Test
+    public void test_divide(){Assert.assertEquals((double)10/5,ar.divide(10,5),0);}
 
     @Test
     public void test_multiply_x_or_y_negative(){
