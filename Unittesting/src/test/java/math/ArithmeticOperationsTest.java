@@ -44,6 +44,11 @@ public class ArithmeticOperationsTest {
     }
 
     @Test
+    public void test_multiply_y_0(){
+        Assert.assertEquals(0,ar.multiply(2,0));
+    }
+
+    @Test
     public void test_multiply_out_of_range(){
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("The product does not fit in an Integer variable");
