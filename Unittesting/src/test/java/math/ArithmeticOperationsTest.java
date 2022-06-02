@@ -27,10 +27,16 @@ public class ArithmeticOperationsTest {
     public void test_divide(){Assert.assertEquals((double)10/5,ar.divide(10,5),0);}
 
     @Test
-    public void test_multiply_x_or_y_negative(){
+    public void test_multiply_x_negative_y_positive(){
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("x & y should be >= 0");
         ar.multiply(-1,1);
+    }
+    @Test
+    public void test_multiply_x_positive_y_negative(){
+        thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("x & y should be >= 0");
+        ar.multiply(1,-1);
     }
     @Test
     public void test_multiply_product_of_multiplication(){
