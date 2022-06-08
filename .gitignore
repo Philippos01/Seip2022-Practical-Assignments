@@ -29,3 +29,11 @@ apache-maven-3.8.5-bin
 /.project
 /.settings
 /gradeshistogram/.settings
+.idea
+/gradeshistogram/target/
+/gradeshistogram/.project
+/gradeshistogram/bin
+
+#Unittesting folders
+/Unittesing/Unittesting.iml/
+/Unittesting/target/
