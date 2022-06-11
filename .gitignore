@@ -37,3 +37,7 @@ apache-maven-3.8.5-bin
 #Unittesting folders
 /Unittesing/Unittesting.iml/
 /Unittesting/target/
+
+#SourceCodeAnalyzer folders
+/SourceCodeAnalyzer/target/
+/SourceCodeAnalyzer/sourcecodeanalyzer.iml/

@@ -6,16 +6,16 @@
 	<artifactId>seip2022_practical_assignments</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.target>18</maven.compiler.target>
 	</properties>
-    <packaging>pom</packaging>
+	<packaging>pom</packaging>
 	<name>Grades Assignment</name>
 	<description>This is a maven assignment for representing grades in a histogram</description>
 	<modules>
 		<module>gradeshistogram</module>
 		<module>Unittesting</module>
+		<module>SourceCodeAnalyzer</module>
 	</modules>
 	<dependencies>
 		<dependency>
