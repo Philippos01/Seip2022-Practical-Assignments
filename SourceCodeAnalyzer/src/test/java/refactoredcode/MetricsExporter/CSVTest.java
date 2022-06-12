@@ -2,7 +2,6 @@ package refactoredcode.MetricsExporter;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertTrue;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,11 +11,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import org.junit.Test;
-
 import refactoredcode.MetricsExporter.CSV;
 import refactoredcode.MetricsExporter.MetricsExporter;
+
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-05-21
+ */
 
 public class CSVTest {
 
@@ -27,7 +30,6 @@ public class CSVTest {
     public void testExportToFile() throws IOException {
         File outputFile = new File(OUTPUT_FILEPATH + ".csv");
 
-        // delete the output files if it does pre-exist
         if (outputFile.exists())
             outputFile.delete();
 

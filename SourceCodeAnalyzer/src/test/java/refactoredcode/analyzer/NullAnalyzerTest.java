@@ -1,8 +1,13 @@
 package refactoredcode.analyzer;
 
 import java.io.IOException;
-
 import org.junit.Test;
+
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-05-21
+ */
 
 public class NullAnalyzerTest {
     private SourceCodeAnalyzer analyzer = new NullAnalyzer();

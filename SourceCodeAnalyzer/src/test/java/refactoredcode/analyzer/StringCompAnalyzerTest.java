@@ -3,17 +3,20 @@ package refactoredcode.analyzer;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
 import org.junit.Test;
-
 import refactoredcode.FileReader.File_Reader;
+
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-05-21
+ */
 
 public class StringCompAnalyzerTest {
     private SourceCodeAnalyzer analyzer = new StringCompAnalyzer();

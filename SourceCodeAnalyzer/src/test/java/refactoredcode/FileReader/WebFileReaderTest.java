@@ -2,15 +2,19 @@ package refactoredcode.FileReader;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.List;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-05-21
+ */
 
 public class WebFileReaderTest {
     private static List<String> expectedList;
@@ -21,14 +25,13 @@ public class WebFileReaderTest {
     @BeforeClass
     public static void setUp() throws IOException {
         expectedList = Files.readAllLines(new File(TEST_CLASS_LOCAL).toPath(), Charset.defaultCharset());
-        expectedString = String.join("\n", expectedList) + "\n"; // transforms a list into a String (with 'new line' as delimiter)
+        expectedString = String.join("\n", expectedList) + "\n";
     }
 
     File_Reader reader = new WebFileReader();
 
     @Test
     public void testReadFileIntoString() throws IOException {
-        //read a locally stored file into a String
         String actuals = reader.ReadFileIntoString(TEST_CLASS_WEB);
         assertEquals(expectedString, actuals);
     }

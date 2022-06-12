@@ -6,6 +6,12 @@ import refactoredcode.FileReader.File_Reader;
 import refactoredcode.FileReader.LocalFileReader;
 import static org.junit.Assert.*;
 
+/**
+ * @author  Fpriovolos
+ * @version 1.0
+ * @since   2022-05-21
+ */
+
 public class SourceCodeAnalyzerTest {
 
     @Test
