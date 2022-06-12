@@ -64,5 +64,5 @@ java –jar “jar-with-dependencies” arg0 arg1 arg2 arg3 arg4
 ```
 Example:
 ```
-java –jar ./target/SourceCodeAnalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+java –jar SourceCodeAnalyzer/target/SourceCodeAnalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar SourceCodeAnalyzer/src/test/resources/TestClass.java regex local metrics_results csv
 ```
