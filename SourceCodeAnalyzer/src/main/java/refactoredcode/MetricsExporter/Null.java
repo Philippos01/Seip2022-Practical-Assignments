@@ -3,7 +3,7 @@ package refactoredcode.MetricsExporter;
 import java.util.Map;
 
 /**
- * *This class handles the null type throwing IllegalArgumentException..
+ *This class handles the null type throwing IllegalArgumentException.
  *
  * @author  Fpriovolos
  * @version 1.0
