@@ -18,7 +18,7 @@ Each package has different classes that implement different tasks through the ex
 <br>
 <br>
 
-<img src="images/Class-Diagram.jpg"/>
+<img src="../images/Class-Diagram.jpg"/>
 
 
 ## New Implementation and Patterns used
