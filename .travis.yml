@@ -11,9 +11,9 @@ before_script:
   - ls -la # this command just prints the contents of the current working directory.
 
 script:
-  - mvn clean package jacoco:report cobertura:cobertura
+  - mvn clean install jacoco:report cobertura:cobertura
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 816cefd1-ec03-43b0-bc9b-e1374106ac7c
   - java -jar SourceCodeAnalyzer/target/SourceCodeAnalyzer-0.0.1.jar SourceCodeAnalyzer/src/test/resources/TestClass.java regex local actual_metrics csv
-  - diff actual_metrics.csv SourceCodeAnalyzer/src/test/resources/expected_metrics.csv
+  - diff SourceCodeAnalyzer/actual_metrics.csv SourceCodeAnalyzer/src/test/resources/expected_metrics.csv
