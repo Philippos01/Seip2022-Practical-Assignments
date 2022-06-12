@@ -6,7 +6,6 @@
 
 ## UML Class Diagram
 
---- 
 
 This is a UML Class Diagram about the SourceCodeAnalyzer module.The Class Diagram visualizes 4 different packages:
 1. ```demo```
@@ -19,9 +18,8 @@ Each package has different classes that implement different tasks through the ex
 <br>
 <br>
 
-<img src="images/Class-Diagram.png"/>
+<img src="images/Class-Diagram.jpg"/>
 
----
 
 ## New Implementation and Patterns used
 
